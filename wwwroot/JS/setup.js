@@ -11,4 +11,8 @@ $(document).ready(function(){
 	$('.listItem').each(function(){
 		$(this).prepend('<div class="glyphicon glyphicon-chevron-right"></div> ');
 	});
+
+    $('.indent').each(function(){
+        $(this).prepend('&emsp;&emsp;&emsp;&emsp;');
+    })
 });

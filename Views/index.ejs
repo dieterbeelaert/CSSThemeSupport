@@ -100,7 +100,7 @@
 
     <div class="slide">
         <h1>Onderzoeksvraag</h1>
-        <p style="text-align: center;">Wat is de beste strategie om per klant een aanpasbare, makkelijk onderhoudbare en toch performante CSS bestanden te gebruiken in een grote webapplicatie?</p>
+        <h4 style="text-align: center;">Wat is de beste strategie om per klant een aanpasbare, makkelijk onderhoudbare en toch performante CSS bestanden te gebruiken in een grote webapplicatie?</h4>
     </div>
 
 	<div class="slide">
@@ -149,13 +149,13 @@
         <h3 class="listItem">Schrijf selectors zo specifiek mogelijk</h3>
         <h3 class="listItem">Verwijder herhaalde selectors (vb. #lijst i.p.v. ul#lijst)</h3>
         <h3 class="listItem">Vermijd herhaalde selectors wanneer deze al voorzien worden door overerving</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Vb. <i style="color:blue;">body a</i> kan vervangen worden door <i style="color:blue">a</i></h4>
+        <h4 class="indent">Vb. <i style="color:blue;">body a</i> kan vervangen worden door <i style="color:blue">a</i></h4>
         <h3 class="listItem">Gebruik klasse selectors i.p.v. overervende selectors</h3>
         <div class="imageHolder">
             <img src="/wwwroot/images/ClassOverInherritance.png" alt="klasse over overervende selectors ..."/>
         </div>
         <h3 class="listItem">Vermijd het gebruik van :hover op niet-link elementen (a elementen)</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Dit kan in IE7 en IE8 voor performantie problemen zorgen</h4>
+        <h4 class="indent">Dit kan in IE7 en IE8 voor performantie problemen zorgen</h4>
         <div class="imageHolder">
             <img src="/wwwroot/images/IE.jpg" alt="Internet explorer troll"/>
         </div>
@@ -216,11 +216,11 @@
     <div class="slide">
         <h1>Font icons</h1>
         <h3 class="listItem">Nadeel spriting: per grootte aparte spritesheet</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Vb. 16px, 32px, 64px versie, ...</h4>
+        <h4 class="indent">Vb. 16px, 32px, 64px versie, ...</h4>
         <h3 class="listItem">SVG sprites?</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Kan performance issues geven in oudere browsers</h4>
+        <h4 class="indent">Kan performance issues geven in oudere browsers</h4>
         <h3 class="listItem">Andere soort van "svg sprites"</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Font icons</h3>
+        <h4 class="indent">Font icons</h4>
     </div>
 
     <div class="slide">
@@ -238,15 +238,15 @@
         <h3 class="listItem">Stijlbaar met CSS</h3>
         <h3 class="listItem">Worden door veel frameworks ondersteund (vb. glyphicons in bootstrap)</h3>
         <h3 class="listItem">Gratis website's om deze aan te maken</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;<a href="http://fontastic.me">http://fontastic.me</a></h4>
+        <h4 class="indent"><a href="http://fontastic.me">http://fontastic.me</a></h4>
     </div>
 
     <div class="slide">
         <h1>Font icons - wat zijn de nadelen?</h1>
         <h3 class="listItem">kan tijd nemen om een icon font te maken</h3>
         <h3 class="listItem">Zijn monotoon (slechts 1 kleur mogelijk)</h3>
-        <h3 class=listItem">Iconen moeten als SVG beschikbaar zijn</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Het is wel mogelijk om met CSS3 Gradients te werken</h4>
+        <h4 class="indent">Het is wel mogelijk om met CSS3 Gradients te werken</h4>
+        <h3 class="listItem">Iconen moeten als SVG beschikbaar zijn</h3>
     </div>
 
 
@@ -386,9 +386,9 @@
     <div class="slide">
         <h1>Uitvoering project</h1>
         <h3 class="listItem">Ongebruikte CSS verwijderen</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Firefox, Dust-me data, node.js</h4>
+        <h4 class="indent">Firefox, Dust-me data, node.js</h4>
         <h3 class="listItem">CSS performance</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Selector performance + "zware" CSS3 elementen verwijderen</h4>
+        <h4 class="indent">Selector performance + "zware" CSS3 elementen verwijderen</h4>
     </div>
 
     <div class="slide">
@@ -460,7 +460,7 @@
         <h1>Uitvoering project - Spriting/font icons</h1>
         <h3 class="listItem">Spriting/font icons? JA</h3>
         <h3 class="listItem">Spriting/font icons in RIA? NEEN</h3>
-        <h4>&emsp;&emsp;&emsp;&emsp;Intranet, afbeeldingen in cache, niet voor ieder icoon mogelijk (SmartGWT beperkingen)</h4>
+        <h4 class="indent">Intranet, afbeeldingen in cache, niet voor ieder icoon mogelijk (SmartGWT beperkingen)</h4>
     </div>
 
     <div class="slide">

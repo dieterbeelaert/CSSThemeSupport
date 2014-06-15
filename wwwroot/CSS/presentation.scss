@@ -82,6 +82,33 @@ body{
   background-position: 38px 40px;
 }
 
+/*Table styling*/
+table{
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align:center;
+  border: 1px solid blue;
+}
+
+table caption{
+  font-weight: bold;
+}
+table tr:nth-child(1),
+table tr th:nth-child(1){
+  background-color:blue;
+  color:white;
+}
+
+table td,
+table th{
+  padding: 10px;
+}
+
+ul{
+  font-size:22px;
+  margin-left:20px
+}
+
 
 /* animations */
 .slide.ng-hide-add, .slide.ng-hide-remove {
