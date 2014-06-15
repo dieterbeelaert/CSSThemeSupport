@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8235295" vertical-offset="1573" max-vertical-offset="10608">
-              <caret line="101" column="40" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.35967743" vertical-offset="9671" max-vertical-offset="10625">
+              <caret line="582" column="48" selection-start-line="582" selection-start-column="45" selection-end-line="582" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="presentation.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="presentation.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/CSS/presentation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78064513" vertical-offset="1369" max-vertical-offset="3655">
+            <state vertical-scroll-proportion="-9.490196" vertical-offset="1369" max-vertical-offset="3655">
               <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
               <folding />
             </state>
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/wwwroot/CSS/test.less" />
         <option value="$PROJECT_DIR$/wwwroot/JS/presentation.js" />
         <option value="$PROJECT_DIR$/wwwroot/JS/setup.js" />
-        <option value="$PROJECT_DIR$/Views/index.ejs" />
         <option value="$PROJECT_DIR$/wwwroot/CSS/presentation.scss" />
+        <option value="$PROJECT_DIR$/Views/index.ejs" />
       </list>
     </option>
   </component>
@@ -386,21 +386,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/index.ejs">
+    <entry file="file://$PROJECT_DIR$/wwwroot/CSS/presentation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8235295" vertical-offset="1573" max-vertical-offset="10608">
-          <caret line="101" column="40" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-9.490196" vertical-offset="1369" max-vertical-offset="3655">
+          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/CSS/presentation.scss">
+    <entry file="file://$PROJECT_DIR$/Views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78064513" vertical-offset="1369" max-vertical-offset="3655">
-          <caret line="109" column="1" selection-start-line="109" selection-start-column="1" selection-end-line="109" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.35967743" vertical-offset="9671" max-vertical-offset="10625">
+          <caret line="582" column="48" selection-start-line="582" selection-start-column="45" selection-end-line="582" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
