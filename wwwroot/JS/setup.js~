@@ -1,0 +1,12 @@
+$(document).ready(function(){
+	var i = 0;	
+	$('.slide').each(function(){
+		$(this).addClass('col-md-10 col-md-offset-1');
+		$(this).attr('ng-show','slides[' + i + ']');
+		i++;	
+	});
+
+	$('.listItem').each(function(){
+		$(this).prepend('<i class="glyphicon glyphicon-chevron-right"></i>');
+	});
+});

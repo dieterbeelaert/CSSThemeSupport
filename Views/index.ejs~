@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html ng-app="presentation">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Presentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/wwwroot/CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/wwwroot/CSS/presentation.css"/>
+</head>
+<body ng-controller="presentationCtrl" ng-keyup="keyPress($event)" >
+
+	<div class="row">	
+		<div  class="slide" >
+			<h1>CSS Theme support</h1>
+		</div>
+
+		<div  class="slide" >
+			<h1>CSS Theme support</h1> <!-- todo remove the incons, and use a class, let JQUERY do the work -->
+			<h3 class="listItem">Sofico</h3>
+			<h3 class="listItem">Miles</h3>
+			<h3 class="listItem">Miles RIA</h3>
+			<h3 class="listItem">(Smart)GWT</h3>
+			<h3 class="listItem">Skinning</h3>
+			<h3 class="listItem">CSS performance</h3>
+			<h3 class="listItem">SASS</h3>
+			<h3 class="listItem">Spriting</h3>
+			<h3 class="listItem">Font icons</h3>
+			<h3 class="listItem">Reflectie</h3>	
+		</div>
+	</div>
+
+	<div class="slide">
+		<h1>Sofico</h1>
+		<h3><i class="glyphicon glyphicon-briefcase"></i> Een particulier bedrijf</h3>
+		<h3><i class="glyphicon glyphicon-road"></i> Software voor leasing-, financierings- en fleetmanagement bedrijven</h3>
+		<h3><i class="glyphicon glyphicon-cloud"></i> Hardware-hosting &amp; -beheer</h3>
+		<h3><i class="glyphicon glyphicon-map-marker"></i> Hoofdzetel: Zwijnaarde</h3>
+		<h3><i class="glyphicon glyphicon-plane"></i> Locaties in het VK, Australia en Japan</h3>
+		<h3><i class="glyphicon glyphicon-user"></i> Meer dan 120 werknemers</h3>
+		<h3><i class="glyphicon glyphicon-gift"></i> Opgericht in 1988</h3>
+	</div>
+
+	<div class="slide">
+		<h1>Miles</h1>
+		<h3><i class="glyphicon glyphicon-road"></i> Allesomvattende oplossing voor leasing, autofinanciering, fleetmanagement, ...</h3>
+		<h3><i class="glyphicon glyphicon-hdd"></i> Miles backend</h3>
+		<h3><i class="glyphicon glyphicon-phone"></i> Verschillende clients: RDA, Miles Web, Miles Mobile, Miles RIA</h3>
+		<h3><i class="glyphicon glyphicon-globe"></i> Internationaal (wetgeving, meerdere talen, meerdere valuta)</h3>
+		<h3><i class="glyphicon glyphicon-thumbs-up"></i> platform- en databaseonafhankelijk (Oracle db, Microsoft SQL, IBM WebSphere, Oracle Weblogic)</h3>
+	</div>
+
+	<div class="slide">
+		<h1>Miles RIA</h1>
+		<h3 class="listItem"> RIA = Rich Internet Application</h3>
+		<h3 class="listItem">Opvolger van RDA (Rich Desktop Application)</h3>
+		<h3 class="listItem">Ontwikkeld in SmartGWT</h3>
+	</div>
+
+	<div class="slide">
+		<h1>GWT</h1>
+		<img src="/wwwroot/images/gwt.png" alt="GWT logo" class="right"/>
+		<h3 class="listItem">Google Web Toolkit</h3>
+		<h3 class="listItem">Open source Java framework</h3>
+		<h3 class="listItem">Complexe browser applicaties</h3>
+		<h3 class="listItem">Compileert Java naar JavaScript</h3>
+		<h3 class="listItem">Gebruikt door Google Wallet en Google Adwords</h3>
+		<h3 class="listItem">Gratis</h3>
+		<h3 class="listItem"><a href="http://www.gwtproject.org">gwtproject.org</a></h3>
+		
+	</div>
+
+	<div class="slide">
+		<h1>Smart GWT</h1>
+		<h3 class="listItem">Framework voor GWT</h3>
+		<h3 class="listItem">Meer dynamische widgets</h3>
+		<h3 class="listItem">Isomorphic</h3>
+		<h3 class="listItem">Gratis versie, maar PRO != gratis</h3>
+		<h3 class="listItem">Basis voor de silkWidgets</h3>
+	</div>
+
+	<div class="slide">
+		<h1>Skinning</h1>
+		<h3>Waarom ?</h3>
+	</div>
+
+	<div class="slide">
+		<h1>CSS performance</h1>
+		<!-- unused selectors, slow selectors, minifying .... -->
+	</div>
+
+	<div class="slide">
+		<h1>SASS</h1>
+		<img src="/wwwroot/images/sass.png" alt="Sass logo" class="right" style="width: 200px;"/>
+		<h3><i class="glyphicon glyphicon-chevron-right"></i> Syntactically Awesome StyleSheets</h3>
+		<h3><i class="glyphicon glyphicon-chevron-right"></i>CSS Precompiler</h3>
+		<h3><i class="glyphicon glyphicon-chevron-right"></i> "Programmeren" met CSS</h3>
+		<h3><i class="glyphicon glyphicon-chevron-right"></i> Ruby</h3>
+		<h3><i class="glyphicon glyphicon-chevron-right"></i> Watch mode</h3>
+		<h3><i class="glyphicon glyphicon-chevron-right"></i> .scss bestanden</h3>
+		<h3><i class="glyphicon glyphicon-chevron-right"></i> Onderhoudbare CSS</h3>
+		<h3><i class="glyphicon glyphicon-thumbs-up"></i> Ideaal om te skinnen</h3>
+	</div>
+	
+	<div class="slide centerAlign" ng-controller="SassController">
+		<h1>SASS Demo</h1>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h4>Input</h4>
+				<textarea ng-model="input" rows="10" cols="40">
+				</textarea>
+			</div>
+
+			<div class="col-md-6">
+				<h4>Output</h4>
+				<textarea ng-model="output" rows="10" cols="40">
+				</textarea>
+			</div>
+		</div>
+		<div class="row" style="height:20px;">
+		
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<button class="btn" ng-click="compile()"><i class="glyphicon glyphicon-play"></i>Compile</button>
+				<span class="leftAlign">Minify <input type="checkbox" ng-model="minify"/></span>	
+			</div>	
+		</div>
+
+		<div class="row">
+			<h4>Examples</h4>
+			<div>
+				<button class="btn" ng-click="setInput(0)"><i class="glyphicon glyphicon-flash"></i>Variables</button>	
+				<button class="btn" ng-click="setInput(1)"><i class="glyphicon glyphicon-flash"></i>Mixins</button>
+				<button class="btn" ng-click="setInput(2)"><i class="glyphicon glyphicon-flash"></i>Nesting</button>	
+				<button class="btn" ng-click="setInput(3)" ><i class="glyphicon glyphicon-flash"></i>Extend/Inherritance</button>
+				<button class="btn" ng-click="setInput(4)"><i class="glyphicon glyphicon-flash"></i>Operators</button>
+				<button class="btn" ng-click="setInput(5)"><i class="glyphicon glyphicon-flash"></i>If/Else</button>
+				<button class="btn" ng-click="setInput(6)"><i class="glyphicon glyphicon-flash"></i>Each</button>
+			</div>		
+		</div>
+		<div class="row">
+			<p>And so much more ...</p>
+		</div>
+	</div>
+
+	
+
+
+	 <div class="slide centerAlign" ng-controller="fontIconController">
+		 <h2>Font Icons Demo</h2>
+        <div class="row controls">
+            <div class="col-md-12">
+                <h3>Change color and size</h3>
+                <div><label>Size</label> <input type="number" ng-model="size" value="{{size}}"/></div>
+                <div><label>Color</label> <input type="color" ng-model="color"/></div>
+            </div>
+        </div>
+
+        <div class="row">
+           <div class="col-md-5 dataHolder">
+                <h3>Font icons</h3>
+                <div style="font-size:{{size}}px; color:{{color}};" ng-repeat="icon in fontIcons" class="icon">{{icon}}</div>
+           </div>
+
+           <!-- bootstrap spacer -->
+           <div class="col-md-2"></div>
+
+           <div class="col-md-5 dataHolder">
+                <h3>Regular icons</h3>
+                <div ng-repeat="icon in iconNames"><img src="/wwwroot/images/{{getClosestSize(size)}}/{{icon}}.png" height="{{size}}px" width="{{size}}px" class="image"/></div>
+           </div>
+       </div> 
+    </div>
+
+
+
+
+    	<div class="navbar navbar-fixed-bottom">
+		<footer>
+			<img src="/wwwroot/images/howest.png" alt="howest logo" class="logo"/>
+			<img src="/wwwroot/images/sofico.png" alt="sofico logo" class="logo"/>
+		</footer>
+	</div>
+
+
+    <script src="wwwroot/JS/jquery.min.js"></script>
+    <script src="wwwroot/JS/setup.js"></script>	
+    <script src="wwwroot/JS/angular.min.js"></script>
+    <script src="wwwroot/JS/angular-animate.js"></script>
+    <script src="wwwroot/JS/presentation.js"></script>
+    <script src="wwwroot/JS/fontIcon.js"></script>
+</body>
+</html>

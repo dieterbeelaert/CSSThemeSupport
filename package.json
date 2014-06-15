@@ -1,0 +1,11 @@
+{
+    "name":"Presentatie",
+    "description":"Presentatie voor stage/eindwerk Dieter Beelaert",
+    "author":"Dieter Beelaert",
+    "dependencies": {
+        "express": ">= 1.2.0",
+        "ejs": ">= 1.0.0",
+        "request": ">= 1.0.0",
+	"node-sass":">= 1.0.0"
+}
+}

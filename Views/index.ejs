@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html ng-app="presentation">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Presentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/wwwroot/CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/wwwroot/CSS/presentation.css"/>
+</head>
+<body ng-controller="presentationCtrl" ng-keyup="keyPress($event)" >
+
+	<div class="row">	
+        <div class="slide">
+            <h1>CSS Theme Support</h1>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h2 style="text-align:center;">Dieter Beelaert</h2>
+        </div>
+
+		<div  class="slide" >
+			<h1>CSS Theme support</h1>
+			<h3 class="listItem">Sofico</h3>
+			<h3 class="listItem">Miles</h3>
+			<h3 class="listItem">Miles RIA</h3>
+			<h3 class="listItem">(Smart)GWT</h3>
+			<h3 class="listItem">Onderzoeksvraag</h3>
+			<h3 class="listItem">CSS performance</h3>
+            <h3 class="listItem">Spriting</h3>
+            <h3 class="listItem">Font icons</h3>
+			<h3 class="listItem">CSS precompilers</h3>
+            <h3 class="listItem">Skinning</h3>
+            <h3 class="listItem">Uitvoering project</h3>
+			<h3 class="listItem">Conclusie</h3>
+		</div>
+	</div>
+
+	<div class="slide">
+		<h1>Sofico</h1>
+		<h3><i class="glyphicon glyphicon-briefcase"></i> Een particulier bedrijf</h3>
+		<h3><i class="glyphicon glyphicon-road"></i> Software voor leasing-, financierings- en fleetmanagement bedrijven</h3>
+		<h3><i class="glyphicon glyphicon-cloud"></i> Hardware-hosting &amp; -beheer</h3>
+		<h3><i class="glyphicon glyphicon-map-marker"></i> Hoofdzetel: Zwijnaarde</h3>
+		<h3><i class="glyphicon glyphicon-plane"></i> Locaties in het VK, Australia en Japan</h3>
+		<h3><i class="glyphicon glyphicon-user"></i> Meer dan 120 werknemers</h3>
+		<h3><i class="glyphicon glyphicon-gift"></i> Opgericht in 1988</h3>
+	</div>
+
+	<div class="slide">
+		<h1>Miles</h1>
+		<h3><i class="glyphicon glyphicon-road"></i> Allesomvattende oplossing voor leasing, autofinanciering, fleetmanagement, ...</h3>
+		<h3><i class="glyphicon glyphicon-hdd"></i> Miles backend</h3>
+		<h3><i class="glyphicon glyphicon-phone"></i> Verschillende clients: RDA, Miles Web, Miles Mobile, Miles RIA</h3>
+		<h3><i class="glyphicon glyphicon-globe"></i> Internationaal (wetgeving, meerdere talen, meerdere valuta)</h3>
+		<h3><i class="glyphicon glyphicon-thumbs-up"></i> platform- en databaseonafhankelijk (Oracle db, Microsoft SQL, IBM WebSphere, Oracle Weblogic)</h3>
+        <h3><i class="glyphicon glyphicon-wrench"></i> Volledig configureerbaar vanuit de MMC (Miles Management Console)</h3>
+	</div>
+
+    <div class="slide">
+       <h1>Miles RIA</h1>
+       <h3 class="listItem"> RIA = Rich Internet Application</h3>
+       <h3 class="listItem">Opvolger van RDA (Rich Desktop Application)</h3>
+       <h3 class="listItem">Ontwikkeld in SmartGWT</h3>
+    </div>
+
+	<div class="slide">
+		<h1>GWT</h1>
+		<img src="/wwwroot/images/gwt.png" alt="GWT logo" class="right"/>
+		<h3 class="listItem">Google Web Toolkit</h3>
+		<h3 class="listItem">Open source Java framework</h3>
+		<h3 class="listItem">Complexe browser applicaties</h3>
+		<h3 class="listItem">Compileert Java naar JavaScript</h3>
+		<h3 class="listItem">Gebruikt door Google Wallet en Google Adwords</h3>
+		<h3 class="listItem">Gratis</h3>
+		<h3 class="listItem"><a href="http://www.gwtproject.org">gwtproject.org</a></h3>
+		
+	</div>
+
+	<div class="slide">
+		<h1>Smart GWT</h1>
+        <img class="right" src="/wwwroot/images/isomorphic.gif" alt="isomorphic logo"/>
+		<h3 class="listItem">Framework voor GWT</h3>
+		<h3 class="listItem">Meer dynamische widgets</h3>
+        <h3 class="listItem">Deep Server Integration</h3>
+		<h3 class="listItem">Isomorphic</h3>
+		<h3 class="listItem">Gratis versie, maar PRO != gratis</h3>
+		<h3 class="listItem">Basis voor de silkWidgets</h3>
+	</div>
+
+    <div class="slide">
+        <h1>Voorbeelden SmartGWT</h1>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/smartGWT.png" alt="smartGWT screenshot" width="100%"/>
+            <h3>Meer voorbeelden op <a href="http://www.smartclient.com/smartgwtee/showcase/">http://www.smartclient.com/smartgwtee/showcase/</a></h3>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Onderzoeksvraag</h1>
+        <p style="text-align: center;">Wat is de beste strategie om per klant een aanpasbare, makkelijk onderhoudbare en toch performante CSS bestanden te gebruiken in een grote webapplicatie?</p>
+    </div>
+
+	<div class="slide">
+		<h1>CSS performance</h1>
+        <img class="right" alt="performance" src="/wwwroot/images/performance.jpg" height="137px" style="margin-bottom:5px;" />
+		<h3 class="listItem">Ongebruikte CSS</h3>
+        <h3 class="listItem">Inefficiënte selectors</h3>
+	</div>
+
+    <div class="slide">
+        <h1>Ongebruikte CSS</h1>
+        <h3 class="listItem">Meer tijd nodig om te downloaden</h3>
+        <h3 class="listItem">Meer tijd nodig om te renderen</h3>
+        <h3 class="listItem">Komt vooral voor bij gebruik CSS frameworks (Bootstrap, ...)</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Ongebruikte CSS - Aanbevelingen van Google</h1>
+        <img src="/wwwroot/images/googleApproved.gif" class="right gglApproved"/>
+        <h3 class="listItem">Verwijder inline style blocks</h3>
+        <h3 class="listItem">Minify CSS</h3>
+        <h3 class="listItem">Indien mogelijk deel CSS op per pagina</h3>
+        <h3 class="listItem">CSS dat initieel niet nodig is later inladen</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Inefficiënte selectors</h1>
+        <h3 class="listItem">Browser leest CSS selector van rechts naar links</h3>
+        <h3 class="listItem">vb. <i style="color:blue;">#wrapper a</i></h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/addClass.png" alt="een apparte klasse voorzien voor alle a elementen in de wrapper"/>
+        </div>
+        <h3 class="listItem">Universele selector (vb: <i style="color:blue">header *</i>)</h3>
+        <h3 class="listItem">Voorbeelden van andere inefficiënte selectors</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/badSelectors.png" alt="enkele slechte CSS selectors"/>
+        </div>
+        <br />
+
+    </div>
+
+    <div class="slide">
+        <h1>Inefficiënte selectors - Aanbevelingen van Google</h1>
+        <img src="/wwwroot/images/googleApproved.gif" class="right gglApproved"/>
+        <h3 class="listItem">Vermijd universele key selectors (gebruik overerving of klasses)</h3>
+        <h3 class="listItem">Schrijf selectors zo specifiek mogelijk</h3>
+        <h3 class="listItem">Verwijder herhaalde selectors (vb. #lijst i.p.v. ul#lijst)</h3>
+        <h3 class="listItem">Vermijd herhaalde selectors wanneer deze al voorzien worden door overerving</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Vb. <i style="color:blue;">body a</i> kan vervangen worden door <i style="color:blue">a</i></h4>
+        <h3 class="listItem">Gebruik klasse selectors i.p.v. overervende selectors</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/ClassOverInherritance.png" alt="klasse over overervende selectors ..."/>
+        </div>
+        <h3 class="listItem">Vermijd het gebruik van :hover op niet-link elementen (a elementen)</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Dit kan in IE7 en IE8 voor performantie problemen zorgen</h4>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/IE.jpg" alt="Internet explorer troll"/>
+        </div>
+        <br/>
+    </div>
+
+    <div class="slide">
+        <h1>Spriting</h1>
+        <h3 class="listItem">Websites staan vol met afbeeldingen</h3>
+        <h3 class="listItem">Iedere afbeelding is een aparte http-request </h3>
+        <h3 class="listItem">Oplossing: spriting</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Spriting, Wat is het?</h1>
+        <h3 class="listItem">Meerdere afbeeldingen samenvoegen tot 1 afbeelding</h3>
+        <h3 class="listItem">Oorsprong: 2D games</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/mario.png"/>
+        </div>
+        <br/>
+        <br/>
+    </div>
+
+    <div class="slide">
+        <h1>Spriting, Hoe doen we het?</h1>
+        <h3 class="listItem">Sprite image</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/sprite.png" alt="een sprite image"/>
+        </div>
+        <h3 class="listItem">HTML</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/spriteHtml.png" alt="wat html code om een sprite image te gebruiken"/>
+        </div>
+        <br/>
+        <br/>
+    </div>
+
+    <div class="slide">
+        <h1>Spriting, Hoe doen we het?</h1>
+        <h3 class="listItem">CSS</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/spriteCSS.png" alt="CSS code om een sprite image te gebruiken"/>
+        </div>
+        <br/>
+    </div>
+
+    <div class="slide">
+        <h1>Spriting, Hoe doen we het?</h1>
+        <h3 class="listItem">Resultaat</h3>
+            <h5>Follow me on</h5>
+            <a href="#"><div class="spriteIcon icon-twitter"></div></a>
+            <a href="#"><div class="spriteIcon icon-facebook"></div></a>
+            <a href="#"><div class="spriteIcon icon-linkedin"></div></a>
+            <a href="#"><div class="spriteIcon icon-rss"></div></a>
+    </div>
+
+    <div class="slide">
+        <h1>Font icons</h1>
+        <h3 class="listItem">Nadeel spriting: per grootte aparte spritesheet</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Vb. 16px, 32px, 64px versie, ...</h4>
+        <h3 class="listItem">SVG sprites?</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Kan performance issues geven in oudere browsers</h4>
+        <h3 class="listItem">Andere soort van "svg sprites"</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Font icons</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Font icons - Wat is het?</h1>
+        <h3 class="listItem">Een lettertype van icoontjes</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/fontIcon.png" alt="een voorstelling van font icons" style="width:50%"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Font icons - wat zijn de voordelen?</h1>
+        <h3 class="listItem">Schaalbaar (Font icons moeten van SVG's gemaakt worden)</h3>
+        <h3 class="listItem">Zeer kleine bestandsgrootte</h3>
+        <h3 class="listItem">Stijlbaar met CSS</h3>
+        <h3 class="listItem">Worden door veel frameworks ondersteund (vb. glyphicons in bootstrap)</h3>
+        <h3 class="listItem">Gratis website's om deze aan te maken</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;<a href="http://fontastic.me">http://fontastic.me</a></h4>
+    </div>
+
+    <div class="slide">
+        <h1>Font icons - wat zijn de nadelen?</h1>
+        <h3 class="listItem">kan tijd nemen om een icon font te maken</h3>
+        <h3 class="listItem">Zijn monotoon (slechts 1 kleur mogelijk)</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Het is wel mogelijk om met CSS3 Gradients te werken</h4>
+    </div>
+
+
+    <div class="slide centerAlign" ng-controller="fontIconController">
+        <h2>Font Icons Demo</h2>
+        <div class="row controls">
+            <div class="col-md-12">
+                <h3>Change color and size</h3>
+                <div><label>Size</label> <input type="number" ng-model="size" value="{{size}}"/></div>
+                <div><label>Color</label> <input type="color" ng-model="color"/></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 dataHolder">
+                <h3>Font icons</h3>
+                <div style="font-size:{{size}}px; color:{{color}};" ng-repeat="icon in fontIcons" class="icon">{{icon}}</div>
+            </div>
+
+            <!-- bootstrap spacer -->
+            <div class="col-md-2"></div>
+
+            <div class="col-md-5 dataHolder">
+                <h3>Regular icons</h3>
+                <div ng-repeat="icon in iconNames"><img src="/wwwroot/images/{{getClosestSize(size)}}/{{icon}}.png" height="{{size}}px" width="{{size}}px" class="image"/></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slide">
+        <h1>CSS precompilers</h1>
+        <h3 class="listItem">CSS = saai</h3>
+        <h3 class="listItem">Geen intelligentie, geen selectie, geen iteratie geen variabelen, ...</h3>
+        <h3 class="listItem">CSS precompilers maken CSS "intelligenter"</h3>
+        <h3 class="listItem">CSS precompilers bieden:</h3>
+        <ul>
+            <li>Variabelen</li>
+            <li>functies (mixins)</li>
+            <li>operatoren</li>
+            <li>if/else structuren</li>
+            <li>loops</li>
+            <li>selector nesting</li>
+        </ul>
+        <h3 class="listItem">Voorbeelden: SASS, LESS, ...</h3>
+    </div>
+
+    <div class="slide">
+        <h1>CSS Precompilers - Hoe werkt het?</h1>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/CSSprecompiler.png" alt="hoe werkt een css precompiler" style="width:100%;"/>
+        </div>
+    </div>
+
+	<div class="slide">
+		<h1>CSS Precompilers - SASS</h1>
+		<img src="/wwwroot/images/sass.png" alt="Sass logo" class="right" style="width: 200px;"/>
+		<h3 class="listItem">Syntactically Awesome StyleSheets</h3>
+		<h3 class="listItem">CSS Precompiler</h3>
+		<h3 class="listItem">"Programmeren" met CSS</h3>
+		<h3 class="listItem">Ruby</h3>
+        <h3 class="listItem">Andere implementaties (LibSass in C)</h3>
+		<h3 class="listItem">Watch mode</h3>
+		<h3 class="listItem">.scss bestanden</h3>
+		<h3 class="listItem">Onderhoudbare CSS</h3>
+	</div>
+	
+	<div class="slide centerAlign" ng-controller="SassController">
+		<h1>SASS Demo</h1>
+
+		<div class="row">
+			<div class="col-md-6">
+				<h4>Input</h4>
+				<textarea ng-model="input" rows="10" cols="40">
+				</textarea>
+			</div>
+
+			<div class="col-md-6">
+				<h4>Output</h4>
+				<textarea ng-model="output" rows="10" cols="40">
+				</textarea>
+			</div>
+		</div>
+		<div class="row" style="height:20px;">
+		
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<button class="btn" ng-click="compile()"><i class="glyphicon glyphicon-play"></i>Compile</button>
+				<span class="leftAlign">Minify <input type="checkbox" ng-model="minify"/></span>	
+			</div>	
+		</div>
+
+		<div class="row">
+			<h4>Examples</h4>
+			<div>
+				<button class="btn" ng-click="setInput(0)"><i class="glyphicon glyphicon-flash"></i>Variables</button>	
+				<button class="btn" ng-click="setInput(1)"><i class="glyphicon glyphicon-flash"></i>Mixins</button>
+				<button class="btn" ng-click="setInput(2)"><i class="glyphicon glyphicon-flash"></i>Nesting</button>	
+				<button class="btn" ng-click="setInput(3)" ><i class="glyphicon glyphicon-flash"></i>Extend/Inherritance</button>
+				<button class="btn" ng-click="setInput(4)"><i class="glyphicon glyphicon-flash"></i>Operators</button>
+				<button class="btn" ng-click="setInput(5)"><i class="glyphicon glyphicon-flash"></i>If/Else</button>
+				<button class="btn" ng-click="setInput(6)"><i class="glyphicon glyphicon-flash"></i>Each</button>
+			</div>		
+		</div>
+		<div class="row">
+			<p>And so much more ...</p>
+		</div>
+	</div>
+
+
+    <div class="slide">
+        <h1>Skinning</h1>
+        <h3>Waarom ?</h3>
+        <h3 class="listItem">Klanten willen RIA personaliseren in de huisstijl van het bedrijf</h3>
+        <h3 class="listItem">Initieel via module in MMC</h3>
+        <h3 class="listItem">Uiteindelijk gekozen voor Skins</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Skins</h1>
+        <h3>Wat is een skin?</h3>
+        <h3 class="listItem">aangepaste stijl voor de applicatie</h3>
+        <h3 class="listItem">Uitwisselbaar</h3>
+        <h3 class="listItem">Aanpasbaar</h3>
+        <h3 class="listItem">vb. Google Chrome</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Voorbeeld skinning</h1>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/skins.jpg" style="width:100%; height:100%;"alt="Skins in google chrome"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project</h1>
+        <h3 class="listItem">Ongebruikte CSS verwijderen</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Firefox, Dust-me data, node.js</h4>
+        <h3 class="listItem">CSS performance</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Selector performance + "zware" CSS3 elementen verwijderen</h4>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - CSS performance</h1>
+        <h3 class="listItem">CSS selector performance</h3>
+        <table>
+            <caption>Rendering tijd (Chrome Timeline)</caption>
+            <tr>
+                <th>Actie</th>
+                <th>Oude CSS</th>
+                <th>Nieuwe CSS</th>
+            </tr>
+            <tr>
+                <th>Openen "fleet" view</th>
+                <td>1.55s</td>
+                <td>1.53s</td>
+            </tr>
+            <tr>
+                <th>Openen "contracts view</th>
+                <td>1.38s</td>
+                <td>1.33s</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - CSS performance</h1>
+        <h3 class="listItem">"Zware" CSS3 elementen</h3>
+        <h3 class="listItem">Gradients</h3>
+        <div class="imageHolder">
+           <img src="/wwwroot/images/gradients.png" alt="miles ria met gradients" style="width:100%"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - CSS performance</h1>
+        <h3 class="listItem">"Zware" CSS3 elementen</h3>
+        <h3 class="listItem">No gradients</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/noGradients.png" alt="miles ria zonder gradients" style="width:100%"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - CSS performance</h1>
+        <h3 class="listItem">"Zware" CSS3 elementen</h3>
+        <table>
+            <caption>Rendering tijd (Chrome Timeline)</caption>
+            <tr>
+                <th>Actie</th>
+                <th>Oude CSS</th>
+                <th>Nieuwe CSS</th>
+            </tr>
+            <tr>
+                <th>Openen "fleet" view</th>
+                <td>1.538s</td>
+                <td>1.533s</td>
+            </tr>
+            <tr>
+                <th>Openen "contracts view</th>
+                <td>1.331s</td>
+                <td>1.321s</td>
+            </tr>
+        </table>
+        <h3 class="listItem">Waarschijnlijk nog meer in oudere browsers (Afbeeldingen, SVG's)</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Spriting/font icons</h1>
+        <h3 class="listItem">Spriting/font icons? JA</h3>
+        <h3 class="listItem">Spriting/font icons in RIA? NEEN</h3>
+        <h4>&emsp;&emsp;&emsp;&emsp;Intranet, afbeeldingen in cache, niet voor ieder icoon mogelijk (SmartGWT beperkingen)</h4>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - hervormen CSS bestanden</h1>
+        <h3 class="listItem">CSS bestanden op verschillende locaties</h3>
+        <h3 class="listItem">Samenvoegen om makkelijker te skinnen</h3>
+        <h3 class="listItem">Onderscheid tussen Sofico en SmartGWT stijlen</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren SASS</h1>
+        <h3 class="listItem">Variabelen introduceren voor kleuren/borders</h3>
+        <h3 class="listItem">Twee Sass bestanden</h3>
+        <ul>
+            <li>var.scss</li>
+            <li>skin_styles.scss</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren SASS</h1>
+        <h3 class="listItem">var.scss</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/var.png" alt="var.scss"/>
+        </div>
+    </div>
+
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren SASS</h1>
+        <h3 class="listItem">skin_styles.scss</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/skin_styles.png" alt="skin_styles.scss"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Afbeeldingen centraliseren</h1>
+        <h3 class="listItem">Afbeeldingen staan op verschillende locaties</h3>
+        <h3 class="listItem">Afbeeldingen samenvoegen, zo kunnen deze per skin aangepast worden</h3>
+        <h3 class="listItem">Paden in de code aanpassen</h3>
+        <h3 class="listItem">Enkele getUrl() functies aanpassen</h3>
+        <h3 class="listItem">Paden in de database aanpassen</h3>
+        <h3 class="listItem">Heeft enkele weken geduurd</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren skins</h1>
+        <h3 class="listItem">Twee soorten skins</h3>
+        <h3 class="listItem">standalone skins</h3>
+        <h3 class="listItem">Override skins</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren skins</h1>
+        <h3 class="listItem">Standalone skin</h3>
+        <h3 class="listItem">Staat los van de default style</h3>
+        <h3 class="listItem">Wordt vooral gebruikt als sandbox om nieuwe stijlen te testen</h3>
+        <h3 class="listItem">Heeft zijn eigen var.scss en skin_styles.scss</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/standaloneSkin.png" alt="structuur standalone skin"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren skins</h1>
+        <h3 class="listItem">Override skin</h3>
+        <h3 class="listItem">Hangt vast aan default skin</h3>
+        <h3 class="listItem">Maakt gebruik van var.scss en skin_styles.scss van de default skin</h3>
+        <h3 class="listItem">"Overschrijft" de standaard waardes van de default skin</h3>
+        <h3 class="listItem">Wijzigt mee met de default skin</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/overrideSkin.png" alt="structuur override skin"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren skins</h1>
+        <h3 class="listItem">Override.scss</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/overrideCode.png" alt="code van override.scss"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren skins</h1>
+        <h3 class="listItem">Skins the bigger picture</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/skinStructuur.png" alt="structuur skins folder"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering project - Implementeren skins</h1>
+        <h3 class="listItem">Skin switching</h3>
+        <h3 class="listItem">Query string</h3>
+        <h3 class="listItem">Servlet injecteerd de CSS bestanden + JavaScript variabelen</h3>
+        <h3 class="listItem">Default skin = constante</h3>
+        <h3 class="listItem">Default skin in de toekomst via database property inladen</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Uitvoering projecten - Implementeren skins</h1>
+        <h3 class="listItem">Eastern egg skin</h3>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/teletubby.png" alt="teletubbies ..." style="width:100%;"/>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h1>Conclusie</h1>
+        <h3 class="listItem">CSS performance <i class="glyphicon glyphicon-ok" style="color:green"></i></h3>
+        <h3 class="listItem">Skins <i class="glyphicon glyphicon-ok" style="color:green"></i></h3>
+        <h3 class="listItem">Veel bijgeleerd <i class="glyphicon glyphicon-ok" style="color:green"></i></h3>
+        <h3 class="listItem">Geslaagd <i class="glyphicon glyphicon-question-sign" style="color:blue"></i></h3>
+    </div>
+
+    <div class="slide">
+        <h1>Bedankt</h1>
+        <h3 class="listItem">Sofico</h3>
+        <h3 class="listItem">Johan Coppieters</h3>
+        <h3 class="listItem">Howest</h3>
+        <h3 class="listItem">Medestudenten TI</h3>
+    </div>
+
+    <div class="slide">
+        <h1>Deze presentatie is gemaakt met:</h1>
+        <div class="imageHolder">
+            <img src="/wwwroot/images/angularjs.png" style="width:50%"/>
+            <br/>
+            <img src="/wwwroot/images/node.png" style="width:25%"/>
+            <img src="/wwwroot/images/html5.png" style="width:25%"/>
+            <img src="/wwwroot/images/sass.png" style="width:25%"/>
+        </div>
+        <h3 class="listItem">GitHub: <a href="https://github.com/dieterbeelaert/CSSThemeSupport">https://github.com/dieterbeelaert/CSSThemeSupport</a></h3>
+    </div>
+
+
+
+    <div class="navbar navbar-fixed-bottom">
+		<footer>
+			<img src="/wwwroot/images/howest.png" alt="howest logo" class="logo"/>
+			<img src="/wwwroot/images/sofico.png" alt="sofico logo" class="logo"/>
+		</footer>
+	</div>
+
+
+    <script src="wwwroot/JS/jquery.min.js"></script>
+    <script src="wwwroot/JS/setup.js"></script>	
+    <script src="wwwroot/JS/angular.min.js"></script>
+    <script src="wwwroot/JS/angular-animate.js"></script>
+    <script src="wwwroot/JS/presentation.js"></script>
+    <script src="wwwroot/JS/fontIcon.js"></script>
+</body>
+</html>

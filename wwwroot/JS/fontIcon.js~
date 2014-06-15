@@ -1,0 +1,23 @@
+
+presentation.controller('fontIconController', function($scope){
+
+    $scope.fontIcons =  ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s'];
+    $scope.iconNames = ['calculate','calendar','command','contract','credit_application','customer','document','fine','incident','information','leasing_company','logout','menu_folder','message_information','reset','save','status_back','supplier','tpsc','vehicle'];
+    $scope.size = 16;
+    $scope.color = '#003D61';
+    $scope.sizes = [16,24,48];
+
+    $scope.getClosestSize = function(size){
+        if(size < 16)
+            return 16;
+        if(size >= 16 && size < 24){
+            return 16;
+        }
+        if(size >= 24 && size < 48){
+            return 24;
+        }
+        return 48;
+    }
+});
+
+
