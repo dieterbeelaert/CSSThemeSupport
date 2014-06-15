@@ -26,8 +26,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35967743" vertical-offset="9671" max-vertical-offset="10625">
-              <caret line="582" column="48" selection-start-line="582" selection-start-column="45" selection-end-line="582" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.35967743" vertical-offset="1511" max-vertical-offset="10625">
+              <caret line="102" column="79" selection-start-line="102" selection-start-column="79" selection-end-line="102" selection-end-column="79" />
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -396,8 +396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35967743" vertical-offset="9671" max-vertical-offset="10625">
-          <caret line="582" column="48" selection-start-line="582" selection-start-column="45" selection-end-line="582" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.35967743" vertical-offset="1511" max-vertical-offset="10625">
+          <caret line="102" column="79" selection-start-line="102" selection-start-column="79" selection-end-line="102" selection-end-column="79" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
