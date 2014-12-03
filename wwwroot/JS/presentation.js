@@ -5,7 +5,7 @@ presentation.controller('presentationCtrl', function($scope){
 	
 	$scope.slides = [];
 	$scope.numberOfSlides = $('.slide').length;
-	$scope.index = 0;
+	$scope.index = 2;
 
 	//show first slide on startup:
 	$scope.slides[$scope.index] = true;
